@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-family: "Comic Sans MS", serif;
+}
+.title{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    border: 2px solid black;
+    background: rgb(48, 87, 124);
+    padding: 0;
+}
+p{
+    margin: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 150px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.25em;
+    font-family: "Comic Sans MS", serif;
+}
+.container_3, .container_2, .container_1{
+    float: left;
+    padding: 20px;
+}
+.first_container{
+    background-color:gray;
+    height: 35px;
+    position: relative;
+    border-top: 2.5px solid black;
+    border-right: 2.5px solid black;
+    border-left: 2.5px solid black;
+}
+.second_container{
+    height: auto;
+    background-color:gray;
+    padding: 14px;
+    border-bottom: 2.5px solid black;
+    border-right: 2.5px solid black;
+    border-left: 2.5px solid black;
+}
+
+
+/**for Desk top **/
+@media (min-width:992px) {
+
+    .container_3{
+        width: 33.3%;
+    }
+    
+}
+/**for tablet view **/
+@media (min-width:768px) and (max-width:991px) {
+
+    .container_3{
+        width: 50%;
+    }
+    .container_1{
+        width: 100%;
+    }
+}
+/**for mobile view **/
+@media (max-width:767px){
+
+   .container_3{
+       width: 100%;
+   }
+
+}
